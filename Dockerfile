@@ -15,9 +15,11 @@ RUN python3 -m pip install --no-cache-dir --upgrade pip
 RUN python3 -m pip install --no-cache-dir \
   sphinx==7.1.2 \
   pillow==10.2.0 \
+  myst-parser==2.0.0 \
   sphinxcontrib-plantuml==0.27 \
   docutils==0.20.1 \
-  sphinx-rtd-theme==2.0.0
+  sphinx-rtd-theme==2.0.0 \
+  furo==2024.1.29
 
 WORKDIR /docs
 USER user
