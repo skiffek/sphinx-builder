@@ -1,0 +1,17 @@
+{
+  "name": "sphinx-builder",
+  "version": "1.1.0",
+  "author": "Wolfgang Kroell-Sassik <wolfgang.kroell-sassik@bosch.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wolfgangsassik/sphinx-builder.git"
+  },
+  "homepage": "https://github.com/wolfgangsassik/sphinx-builder#readme",
+  "bugs": {
+    "url": "https://github.com/wolfgangsassik/sphinx-builder/issues"
+  },
+  "scripts": {
+    "build": "docker build -t ghcr.io/wolfgangsassik/${npm_package_name}:${npm_package_version} -t ghcr.io/wolfgangsassik/${npm_package_name}:latest ."
+  }
+}
